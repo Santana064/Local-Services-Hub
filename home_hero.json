@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "title": "Find Trusted Local Services",
+    "subtitle": "Connecting you with reliable service providers in South Africa.",
+    "button1": "Explore Services",
+    "button1Link": "/services",
+    "imagePrompt": "local services"
+  },
+  "pageUrl": "/",
+  "websiteId": "website-uuid"
+}
