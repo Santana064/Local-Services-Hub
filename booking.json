@@ -1,0 +1,9 @@
+{
+  "pageOrder": 3,
+  "page": {
+    "pageName": "Booking",
+    "pageType": "subPage",
+    "pageUrl": "/booking"
+  },
+  "websiteId": "website-uuid"
+}
