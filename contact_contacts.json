@@ -1,0 +1,20 @@
+{
+  "contacts": {
+    "contactsInfos": [
+      {
+        "type": "email",
+        "text": "support@localserviceshub.co.za"
+      },
+      {
+        "type": "tel",
+        "text": "+27 123 456 789"
+      },
+      {
+        "type": "address",
+        "text": "123 Main Street, Johannesburg, South Africa"
+      }
+    ]
+  },
+  "pageUrl": "/contact",
+  "websiteId": "website-uuid"
+}
