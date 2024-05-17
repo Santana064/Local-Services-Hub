@@ -1,0 +1,14 @@
+{
+  "websiteTitle": "Local Services Hub",
+  "header": {
+    "title": "Local Services Hub"
+  },
+  "footer": {
+    "description": "© 2024 Local Services Hub. All rights reserved."
+  },
+  "colors": {
+    "mainColor": "dark_orange",
+    "secondColor": "orange"
+  },
+  "orderColorSchema": "zebra"
+}
