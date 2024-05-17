@@ -1,0 +1,30 @@
+{
+  "form": {
+    "title": "Book a Service",
+    "inputs": [
+      {
+        "inputName": "Name",
+        "inputType": "text"
+      },
+      {
+        "inputName": "Email",
+        "inputType": "email"
+      },
+      {
+        "inputName": "Service Type",
+        "inputType": "text"
+      },
+      {
+        "inputName": "Preferred Date",
+        "inputType": "text"
+      },
+      {
+        "inputName": "Additional Notes",
+        "inputType": "textarea"
+      }
+    ],
+    "sendButtonName": "Book Now"
+  },
+  "pageUrl": "/booking",
+  "websiteId": "website-uuid"
+}
