@@ -1,0 +1,22 @@
+{
+  "features": {
+    "imagePrompt": "service features",
+    "title": "Why Choose Us?",
+    "points": [
+      {
+        "title": "Verified Providers",
+        "description": "All service providers are thoroughly vetted."
+      },
+      {
+        "title": "Customer Reviews",
+        "description": "Read reviews from real customers."
+      },
+      {
+        "title": "Easy Booking",
+        "description": "Book services online with ease."
+      }
+    ]
+  },
+  "pageUrl": "/",
+  "websiteId": "website-uuid"
+}
