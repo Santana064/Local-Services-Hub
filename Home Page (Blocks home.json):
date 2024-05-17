@@ -1,0 +1,9 @@
+{
+  "pageOrder": 0,
+  "page": {
+    "pageName": "Home",
+    "pageType": "mainPage",
+    "pageUrl": "/"
+  },
+  "websiteId": "website-uuid"
+}
