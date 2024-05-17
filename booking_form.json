@@ -26,5 +26,5 @@
     "sendButtonName": "Book Now"
   },
   "pageUrl": "/booking",
-  "websiteId": "website-uuid"
+  "websiteId": "my-local-services-website"
 }
