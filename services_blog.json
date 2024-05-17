@@ -1,0 +1,28 @@
+{
+  "blog": {
+    "items": [
+      {
+        "name": "Plumbing Services",
+        "description": "Find experienced plumbers near you.",
+        "imagePrompt": "plumbing"
+      },
+      {
+        "name": "Electrical Services",
+        "description": "Reliable electricians for your home or office.",
+        "imagePrompt": "electrical"
+      },
+      {
+        "name": "Cleaning Services",
+        "description": "Professional cleaning services at your convenience.",
+        "imagePrompt": "cleaning"
+      },
+      {
+        "name": "Gardening Services",
+        "description": "Expert gardeners to maintain your garden.",
+        "imagePrompt": "gardening"
+      }
+    ]
+  },
+  "pageUrl": "/services",
+  "websiteId": "website-uuid"
+}
