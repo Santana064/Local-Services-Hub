@@ -1,0 +1,22 @@
+{
+  "features": {
+    "imagePrompt": "provider profile",
+    "title": "Meet Our Service Providers",
+    "points": [
+      {
+        "title": "Verified Backgrounds",
+        "description": "We ensure all providers have clean records."
+      },
+      {
+        "title": "Customer Feedback",
+        "description": "See what other customers have to say."
+      },
+      {
+        "title": "Service Excellence",
+        "description": "Committed to providing top-notch services."
+      }
+    ]
+  },
+  "pageUrl": "/provider-profile",
+  "websiteId": "website-uuid"
+}
