@@ -85,34 +85,43 @@ const contactPageData = {
     contactFormFields: ["name", "email", "subject", "message"]
 };
 
-// Function to display home page content
-function displayHomePage() {
-    // Display welcome message, key features, and contact info
+// Function to update service providers based on selected service
+function updateProviders() {
+    const selectedService = document.getElementById("serviceSelect").value;
+    const providersList = document.getElementById("providersList");
+    providersList.innerHTML = ""; // Clear existing provider list
+
+    // Find providers offering the selected service
+    const selectedProviders = providersPageData.filter(provider => provider.servicesOffered.includes(selectedService));
+
+    // Display providers offering the selected service
+    selectedProviders.forEach(provider => {
+        const providerElement = document.createElement("div");
+        providerElement.classList.add("provider");
+        providerElement.innerHTML = `
+            <img src="${provider.image}" alt="${provider.name}">
+            <h3>${provider.name}</h3>
+            <p>${provider.bio}</p>
+            <p>Rating: ${provider.rating}</p>
+            <p>Email: ${provider.contactInfo.email}</p>
+            <p>Phone: ${provider.contactInfo.phone}</p>
+        `;
+        providersList.appendChild(providerElement);
+    });
 }
 
-// Function to display services page content
-function displayServicesPage() {
-    // Display list of services with descriptions, images, and pricing
+// Function to display services in the dropdown
+function displayServicesDropdown() {
+    const serviceSelect = document.getElementById("serviceSelect");
+
+    // Populate dropdown with available services
+    servicesPageData.forEach(service => {
+        const option = document.createElement("option");
+        option.value = service.serviceName;
+        option.textContent = service.serviceName;
+        serviceSelect.appendChild(option);
+    });
 }
 
-// Function to display providers page content
-function displayProvidersPage() {
-    // Display list of service providers with names, bios, ratings, and contact info
-}
-
-// Function to display booking page content
-function displayBookingPage() {
-    // Display booking form with fields for name, email, phone, service, date, and time
-}
-
-// Function to display contact page content
-function displayContactPage() {
-    // Display contact form with fields for name, email, subject, and message
-}
-
-// Event listeners to handle navigation
-document.getElementById("home").addEventListener("click", displayHomePage);
-document.getElementById("services").addEventListener("click", displayServicesPage);
-document.getElementById("providers").addEventListener("click", displayProvidersPage);
-document.getElementById("booking").addEventListener("click", displayBookingPage);
-document.getElementById("contact").addEventListener("click", displayContactPage);
+// Call the function to populate services dropdown on page load
+displayServicesDropdown();
