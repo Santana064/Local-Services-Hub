@@ -23,73 +23,27 @@
     </header>
     
     <main>
-        <!-- Home Section -->
         <section id="home" class="page">
-            <div class="hero">
-                <h1>Welcome to Local Services Hub</h1>
-                <p>Connecting you with reliable service providers in South Africa.</p>
-                <a href="#services" class="button">Explore Services</a>
-            </div>
+            <!-- Home content goes here -->
         </section>
         
-        <!-- Services Section -->
         <section id="services" class="page">
             <h2>Find Trusted Local Services</h2>
-            <div class="services-grid">
-                <div class="service">
-                    <img src="plumbing.jpg" alt="Plumbing Service">
-                    <h3>Plumbing</h3>
-                </div>
-                <div class="service">
-                    <img src="electrician.jpg" alt="Electrician Service">
-                    <h3>Electrician</h3>
-                </div>
-                <div class="service">
-                    <img src="cleaning.jpg" alt="Cleaning Service">
-                    <h3>Cleaning</h3>
-                </div>
+            <div class="service-selection">
+                <label for="service-select">Select a service:</label>
+                <select id="service-select">
+                    <option value="plumbing">Plumbing</option>
+                    <option value="electrician">Electrician</option>
+                    <option value="cleaning">Cleaning</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div id="service-results">
+                <!-- Service results will be displayed here -->
             </div>
         </section>
         
-        <!-- Providers Section -->
-        <section id="providers" class="page">
-            <h2>Our Service Providers</h2>
-            <div class="providers-list">
-                <div class="provider">
-                    <img src="provider1.jpg" alt="John Doe">
-                    <div class="provider-info">
-                        <h3>John Doe</h3>
-                        <p>Service: Plumbing</p>
-                    </div>
-                </div>
-                <div class="provider">
-                    <img src="provider2.jpg" alt="Jane Smith">
-                    <div class="provider-info">
-                        <h3>Jane Smith</h3>
-                        <p>Service: Electrician</p>
-                    </div>
-                </div>
-                <div class="provider">
-                    <img src="provider3.jpg" alt="David Johnson">
-                    <div class="provider-info">
-                        <h3>David Johnson</h3>
-                        <p>Service: Cleaning</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Booking Section -->
-        <section id="booking" class="page">
-            <h2>Book a Service</h2>
-            <!-- Add booking form here -->
-        </section>
-        
-        <!-- Contact Section -->
-        <section id="contact" class="page">
-            <h2>Contact Us</h2>
-            <!-- Add contact information here -->
-        </section>
+        <!-- Add more sections for providers, booking, and contact -->
     </main>
 
     <footer>
@@ -98,5 +52,7 @@
         <p>Tel: +27 123 456 789</p>
         <p>Address: 123 Main Street, Johannesburg, South Africa</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
