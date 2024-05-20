@@ -12,47 +12,48 @@
             <img src="logo.png" alt="Local Services Hub Logo">
         </div>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#providers">Providers</a></li>
                 <li><a href="#booking">Booking</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
         </nav>
     </header>
-    
     <main>
-        <section id="home" class="page">
-            <!-- Home content goes here -->
+        <section id="home" class="section">
+            <h1>Welcome to Local Services Hub</h1>
+            <p>Find Trusted Local Services</p>
         </section>
-        
-        <section id="services" class="page">
-            <h2>Find Trusted Local Services</h2>
-            <div class="service-selection">
-                <label for="service-select">Select a service:</label>
-                <select id="service-select">
-                    <option value="plumbing">Plumbing</option>
-                    <option value="electrician">Electrician</option>
-                    <option value="cleaning">Cleaning</option>
-                    <!-- Add more options as needed -->
-                </select>
+        <section id="services" class="section">
+            <h2>Services</h2>
+            <div class="service">
+                <img src="electrician.jpg" alt="Electrician">
+                <h3>Electrician</h3>
             </div>
-            <div id="service-results">
-                <!-- Service results will be displayed here -->
-            </div>
+            <!-- Add more service sections as needed -->
         </section>
-        
-        <!-- Add more sections for providers, booking, and contact -->
+        <section id="providers" class="section">
+            <h2>Service Providers</h2>
+            <!-- Add provider information here -->
+        </section>
+        <section id="booking" class="section">
+            <h2>Booking</h2>
+            <!-- Add booking form here -->
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <!-- Add contact information here -->
+        </section>
     </main>
-
     <footer>
         <p>© 2024 Local Services Hub. All rights reserved.</p>
         <p>Email: <a href="mailto:support@localserviceshub.co.za">support@localserviceshub.co.za</a></p>
         <p>Tel: +27 123 456 789</p>
         <p>Address: 123 Main Street, Johannesburg, South Africa</p>
     </footer>
-
     <script src="scripts.js"></script>
 </body>
 </html>
