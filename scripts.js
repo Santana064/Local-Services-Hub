@@ -114,37 +114,23 @@ function updateProviders() {
 function displayServicesDropdown() {
     const serviceSelect = document.getElementById("serviceSelect");
 
-    // Clear existing options
-    serviceSelect.innerHTML = "";
+    if (serviceSelect) {
+        // Clear existing options
+        serviceSelect.innerHTML = "";
 
-    // Populate dropdown with available services
-    servicesPageData.forEach(service => {
-        const option = document.createElement("option");
-        option.value = service.serviceName;
-        option.textContent = service.serviceName;
-        serviceSelect.appendChild(option);
-    });
+        // Populate dropdown with available services
+        servicesPageData.forEach(service => {
+            const option = document.createElement("option");
+            option.value = service.serviceName;
+            option.textContent = service.serviceName;
+            serviceSelect.appendChild(option);
+        });
+    } else {
+        console.error("Service select element not found.");
+    }
 }
 
 // Call the function to populate services dropdown on page load
-displayServicesDropdown();
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Event listeners for navigation links
-    document.querySelector('nav ul').addEventListener('click', function(event) {
-        if (event.target.tagName === 'A') {
-            const targetPage = event.target.getAttribute('href');
-            loadPage(targetPage);
-        }
-    });
-
-    // Function to load page content
-    function loadPage(page) {
-        fetch(page)
-            .then(response => response.text())
-            .then(html => {
-                document.querySelector('main').innerHTML = html;
-            })
-            .catch(error => console.error('Error loading page:', error));
-    }
+    displayServicesDropdown();
 });
