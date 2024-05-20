@@ -23,10 +23,15 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    text-align: center;
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
 }
 
 nav ul {
@@ -67,9 +72,13 @@ nav ul li a {
     background-color: #ff6f00;
 }
 
-footer {
+.footer-info {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
 }
