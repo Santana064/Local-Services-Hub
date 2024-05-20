@@ -114,6 +114,9 @@ function updateProviders() {
 function displayServicesDropdown() {
     const serviceSelect = document.getElementById("serviceSelect");
 
+    // Clear existing options
+    serviceSelect.innerHTML = "";
+
     // Populate dropdown with available services
     servicesPageData.forEach(service => {
         const option = document.createElement("option");
@@ -125,6 +128,7 @@ function displayServicesDropdown() {
 
 // Call the function to populate services dropdown on page load
 displayServicesDropdown();
+
 document.addEventListener('DOMContentLoaded', function() {
     // Event listeners for navigation links
     document.querySelector('nav ul').addEventListener('click', function(event) {
