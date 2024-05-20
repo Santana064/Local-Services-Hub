@@ -125,3 +125,22 @@ function displayServicesDropdown() {
 
 // Call the function to populate services dropdown on page load
 displayServicesDropdown();
+document.addEventListener('DOMContentLoaded', function() {
+    // Event listeners for navigation links
+    document.querySelector('nav ul').addEventListener('click', function(event) {
+        if (event.target.tagName === 'A') {
+            const targetPage = event.target.getAttribute('href');
+            loadPage(targetPage);
+        }
+    });
+
+    // Function to load page content
+    function loadPage(page) {
+        fetch(page)
+            .then(response => response.text())
+            .then(html => {
+                document.querySelector('main').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading page:', error));
+    }
+});
